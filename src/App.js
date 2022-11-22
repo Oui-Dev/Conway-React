@@ -11,7 +11,7 @@ function App() {
   const start = async () => {
     setDisabled(true);
     let result = next();
-    await delay(150);
+    await delay(100);
     if(result === true) start();
     else setDisabled(false);
   }
